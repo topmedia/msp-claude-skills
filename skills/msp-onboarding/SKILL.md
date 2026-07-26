@@ -46,7 +46,10 @@ Verify all of these. A missing gate is a stop, not a note.
 1. **Countersigned MSA plus a signed Service Order (or SOW)** on file for this client. Verify
    against the actual signed documents, not memory. (If your Service Order template is not yet
    finalized, whatever paper this client actually signed governs.)
-2. **Onboarding project approved.** Scope and price per msp-pricing, at break-fix rates.
+2. **Onboarding project approved.** Scope and price per msp-pricing, at break-fix rates. If
+   the fee was waived or discounted under the bundle discount, the signed SOW must state the
+   percentage and the signed Service Order must carry the clawback. A waiver that exists only
+   in an email fails this gate.
 3. **Regulated data check.** Education, healthcare, financial, or legal clients: the DPA or BAA
    gate applies before {{COMPANY_NAME}} touches regulated data. If regulated data is in scope
    (student records, health information, financial data, and the like) and the DPA or BAA

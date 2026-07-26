@@ -31,13 +31,11 @@ and the regulated-data clause that points to the DPA.
 counts, SLA response targets, or anything specific to one client. This playbook deliberately
 decided against adding term language to the MSA for exactly this reason.
 
-**Status:** Example template; pending review by an attorney licensed in {{STATE}} before it goes
-live (highest priority is the non-solicit liquidated-damages figure). Known minor items to check
-when you adapt it: any hardcoded effective-date line left over from a template source, a dual
-payment-timing reference if both a due-on-the-1st and a late-after-30-days line appear, and
-confirming your price sheet's holiday multiplier matches what the MSA states. Keep your working
-copy in whatever document management system you use, and keep it in sync if you maintain more
-than one copy.
+**Status:** Example structure; the standing recommendation is a service-agnostic MSA paired
+with a separate Managed Services Addendum that carries the managed-services-specific terms, so
+the MSA itself works unchanged for break-fix and project-only clients. Pending review by an
+attorney licensed in {{STATE}} before it goes live (highest priority is the non-solicit
+liquidated-damages figure).
 
 ---
 
@@ -60,6 +58,21 @@ set by Order"), and any client-specific softening of flexible MSA clauses (for e
 (cyber insurance minimum, term). Until the Order template exists, those clauses point at
 nothing. This is the most important unbuilt document in the stack.
 
+**Onboarding-Fee Waiver and Early Termination (new section after Fees and Term):** Enforces
+the SOW-side bundle discount (entry 3). Template text:
+
+> Onboarding-Fee Waiver and Early Termination. If Provider waived or discounted an
+> onboarding fee under a Statement of Work in reliance on this Order, and this Order
+> is terminated before the end of the initial term for any reason other than
+> Provider's uncured material breach, the waived amount of $[___] becomes due, in
+> addition to any other amounts owed for the remainder of the term under the
+> Agreement.
+
+**Attorney flag:** the example draft already carries early termination at 50% of
+remaining-term fees as liquidated damages; this clawback stacks on top of that. Confirm with
+the attorney licensed in {{STATE}} that the combination stays enforceable and does not read as
+a penalty (both templates belong in the same pending review anyway).
+
 **Status:** Example template; pending review by an attorney licensed in {{STATE}} before first
 use. An example draft ships in the kit at `templates/msp-service-order-template.docx`;
 includes the SLA schedule (entry 4). Example positions baked in, review and replace with your
@@ -67,7 +80,8 @@ own: auto-renewal in successive one-year terms at the then-current one-year rate
 non-renewal notice, early termination at 50% of remaining term fees as liquidated damages, and
 service credits (5% of the monthly fee per documented P1/P2 first-response miss month, capped at
 15%, sole and exclusive remedy inside the MSA cap). Monthly count reconciliation with a [10]%
-amendment threshold is a standing proposal in the example draft.
+amendment threshold is a standing proposal in the example draft. The Onboarding-Fee Waiver
+section above is not yet in the example template file; add it when you adapt the draft.
 
 ---
 
@@ -83,6 +97,21 @@ Order) and for project-only clients (who sign the MSA plus a SOW, no Order).
 estimate with the billing basis (fixed fee versus time and materials), timeline and milestones,
 client dependencies ("client will provide access to the server room by..."), acceptance
 criteria, and what happens to out-of-scope requests (pointer to the Change Order process).
+
+**Bundle discount (standard optional section):** For onboarding SOWs, the fixed fee may be
+discounted 50 to 100% as a closing incentive when the client signs a Service Order for
+recurring managed services with at least a one-year term on or before the SOW's effective
+date. The SOW states the discount; the Service Order enforces it via the clawback (entry 2).
+The same pattern works for other build-then-host deals, for example a website-build SOW
+discounted against a signed hosting Service Order. Template text for the Fees and Payment
+section:
+
+> Bundle discount. If Client signs a Service Order for recurring managed services with
+> at least a one-year term on or before the effective date of this SOW, [___]% of the
+> total fixed fee above is waived. If that Service Order is terminated before the end
+> of its initial term, the waived amount becomes due as described in the Service
+> Order. If less than the full fee is waived, the payment schedule below applies to
+> the discounted balance.
 
 **Drafting note:** Scope creep is the classic MSP project killer. The assumptions/exclusions
 section and a working Change Order process are what make a SOW protective rather than

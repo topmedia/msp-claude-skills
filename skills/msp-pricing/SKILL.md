@@ -188,6 +188,13 @@ the number. The contract ladder is how you reward a longer commitment, not a ref
   how proactive you are, never by how fast you answer. Every client gets your best response.
 - **Onboarding and migration are billed separately**, always, at the managed-client rates on
   the break-fix card (`references/break-fix-rates.md`).
+- **Onboarding fee waiver.** The onboarding SOW fee may be discounted 50 to 100% as a
+  closing incentive, only when the client signs a Service Order with at least a
+  one-year term on or before the SOW date, and only with the clawback in the Service
+  Order (waived amount becomes due on early termination, except for Provider's
+  uncured material breach). The fee is still quoted in full on the SOW; the waiver is
+  a stated discount against it, never a silent absorption. Anything outside these
+  conditions needs owner sign-off.
 - **After-hours hourly work bills at 1.5x and holiday work at 2x.** This skill is the owning
   source for both multipliers; msp-legal (the MSA states them) and msp-helpdesk (the desk
   applies them) both defer here. Never invent or waive multipliers ad hoc. They multiply the

@@ -289,7 +289,8 @@ for a tough conversation.
 - Meet the prospect where they are emotionally before presenting logic
 - Use stories and social proof, not feature lists
 - For price objections specifically, hold the line msp-pricing sets: never offer a discount
-  outside the contract-length ladder, and never imply a cheaper short-term option exists
+  outside the contract-length ladder or the onboarding fee waiver (see The Pricing
+  Conversation below), and never imply a cheaper short-term option exists
 
 **Output format:** Plain text for quick reference, or formatted Word doc if building a training resource.
 
@@ -332,6 +333,13 @@ client, priced by the configurator.
 - If they push back, ask a question before touching the price
 - Pricing confidence is a sales skill: counsel against fear-based discounting; the floor exists
   for a reason
+- **Named closing tool: the onboarding fee waiver.** When a prospect balks at total
+  first-month cost, concede the onboarding fee before ever touching the monthly rate: the
+  waiver is protected by the Service Order clawback, while the monthly rate repeats for the
+  life of the term. Frame it as "sign the one-year agreement and onboarding is on us," never
+  as a discount ladder on MRR. Conditions and paper trail per msp-pricing (Service Order with
+  at least a one-year term signed on or before the SOW date, percentage stated on the SOW,
+  clawback in the Order).
 
 **Output format:** Conversational coaching in chat; talk-track snippets on request.
 
